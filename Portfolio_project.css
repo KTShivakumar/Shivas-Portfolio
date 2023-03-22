@@ -1,0 +1,360 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.projects{
+    margin-top: 3%;
+    background-color: #001010;
+    display: grid;
+}
+.web_pro{
+    display: grid;
+    grid-template-columns: repeat(4,300px);
+    grid-template-rows: repeat(2,300px);
+}
+.web1 h1{
+    position:relative;
+    top: -70px;
+    left: -20px;
+    color:bisque;
+}
+.web1 p{
+    position:relative;
+    left: -10px;
+    top: -54px;
+    line-height: 30px;
+    max-height:fit-content;
+    text-align:left;
+    max-width: 100%;
+    font-size: 20px;
+    color: snow;
+}
+.web1 strong{
+    font-size: 23px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    top: -40px;
+}
+.web{
+    grid-column:1;
+    border-radius: 20%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:70px;
+    text-align:left;
+    padding:10vh 0vh 0vh 0vh;
+    text-transform: capitalize;
+}
+.web p{
+    font-size: 70px;
+    line-height: 90px;
+    position:relative;
+    color: antiquewhite;
+    left: 20px;
+    text-shadow: 6px 7px 7px #232f2d;
+    animation-name: shiva;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@-webkit-keyframes shiva{
+    10%{color:white;}
+    20%{color:rgb(208, 152, 152);}
+    30%{color:rgb(77, 51, 51);}
+    50%{color:rgb(181, 166, 96);}
+    70%{color:rgb(149, 76, 76);}
+    80%{color:rgb(83, 154, 187);}
+    90%{color:rgb(219, 29, 130);}
+}
+.web1{
+    grid-column: span 3;
+    padding: 10ch;
+}
+.iceland{
+    border-radius:3%;
+    margin-right: -5%;
+    background-image: url("./ice.jpg");
+    background-position-y:-10px;
+    background-position-x: 10px;
+    background-size:cover;
+}
+.web2{
+    margin: 3% 0% 0% 2%;
+    grid-column: span 2;
+    padding: 10ch;
+}
+.clg{
+    border-radius:3%;
+    background-image: url("./clg.jpg");
+    background-size:cover;
+}
+.web2 h1{
+    position:relative;
+    top: -40px;
+    text-transform: uppercase;
+    left: -60px;
+    font-size: 40px;
+    color:bisque;
+}
+.web2 p{    
+    min-width: 5.5in;
+    position:relative;
+    padding: 10px;
+    left: -60px;
+    top: -14px;
+    line-height: 30px;
+    max-height:fit-content;
+    text-align:left;
+    font-size: 20px;
+    color:snow;
+}
+.web3{
+    margin: 3% -8% 0% 3%;
+    grid-column: span 2;
+    padding: 10ch;
+}
+.web3 h1{
+    position:relative;
+    padding: 10px;
+    top: -50px;
+    text-transform: uppercase;
+    left: -60px;
+    max-width: 180%;
+    font-size: 40px;
+    color: beige;
+}
+.web3 p{
+    position:relative;
+    padding: 10px;
+    left: -70px;
+    top: -34px;
+    line-height: 30px;
+    max-height:fit-content;
+    text-align:left;
+    min-width: 100%;
+    font-size: 20px;
+    color:black;
+}
+.bir{
+    border-radius:3%;
+    background-image: url("./bir.jpg");
+    background-size:cover;
+}
+.ml_pro{
+    margin-top:2%;
+    display: grid;
+    grid-template-columns:repeat(6,200px);
+    grid-template-rows: repeat(1, 300px);
+}
+.machine{
+    padding: 4vh;
+    font-size: 33px;
+    text-transform: capitalize;
+    text-align: left;
+    grid-row: 1;
+    border: 1px solid black;
+    line-height: 250%;
+    text-decoration: underline;
+}
+.machine1{
+    grid-column: span 5;
+}
+.machine1_bg{
+    margin: 2ch;
+    background-size:contain;
+    background-image: url("./ml.png");
+    opacity: 0.5;
+}
+.machine1_bg1{
+    background-color: #000010;
+    opacity: 0.6;
+    background-size: cover;
+}
+.machine1 h1{
+    position: relative;
+    left: -20px;
+    background-size: cover;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 20px;
+    text-decoration: underline 2px red;
+}
+.machine1 p{
+    max-width: 100%;
+    padding: 40px;
+    color: white;
+    top: 20px;
+    position: relative;
+    left: 10px;
+    font-size: 20px;
+}
+@media (max-width:1400px) and (min-width:600px){
+    .iceland1{
+        display: none;
+    }
+    .pic{
+        display:none;
+    }
+    .clg1{
+        display: none;
+    }
+    .bir1{
+        display: none;
+    }
+    .ml_cer{
+        display: none;
+    }
+    .machine1 img{
+        display: none;
+    }
+    .machine1 i{
+        display: none;
+    }
+}
+@media (max-width:400px) and (min-width:200px){
+    .projects{
+        margin-top: 5%;
+        width: 100%;
+        position: relative;
+        display:inline;
+    }
+    .web_pro{
+        display: flex;
+        flex-direction: column;
+        min-height:min-content;
+        flex-wrap:nowrap;
+    }
+    .web p{
+        display: grid;
+        max-width: 60px;
+        padding: 10px;
+    }
+    .iceland{
+        background-image: none;
+    }
+    .web1{
+        left: -20px;
+        position:relative;
+        max-width: 210px;
+    }
+    .web3{
+        position:relative;
+        max-width: 210px;
+    }
+    .none{
+        display: none;
+    }
+    .web1 h1{
+        font-size: 35px;
+        position:relative;
+        left: -3.6in;
+        top: -60px;
+        text-transform: capitalize;
+    }
+    .web2 h1{
+        font-size: 35px;
+        position:relative;
+        text-transform: capitalize;
+        left: -4.3in;
+        top:-70px;
+        min-width: 3.3in;
+    }
+    .web3 h1{
+        font-size: 35px;
+        position:relative;
+        text-transform: capitalize;
+        left: -4.4in;
+        top:-100px;
+        min-width: 2.3in;
+    }
+    .web1,.web2,.web3{
+        display:flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        align-items:flex-start;
+        max-width: fit-content;
+        max-height:100px;
+    }
+    .web_pro img{
+        display:flex;
+        max-width: 320px;
+        align-items: center;
+        left: -70px;
+        top: -40px;
+        min-height: 150px;
+        border: 2px solid silver;
+        border-radius: 10%;
+    }
+    .iceland1{
+        position:sticky;
+        margin-left: -40px;
+    }
+    .clg1{
+        margin-top: 30px;
+    }
+    .clg{
+        background-image: none;
+    }
+    .bir{
+        background-image: none;
+    }
+    .ml_pro{
+        display: grid;
+        width: 65%;    
+        grid-template-columns: none;  
+        grid-template-rows: none; 
+    }
+    .machine1_bg{
+        background-image: none;
+    }
+    .machine1_bg1{
+        background: none;
+    }
+    .machine{
+        margin-bottom: 10px;
+    }
+    .machine1{
+        margin-bottom: 40px;
+    }
+    .ml_rep{
+        display: block;
+        font-size: 25px;
+        max-width:fit-content;
+        position: relative;
+        top: 40px;
+        left: 20px;
+    }
+    .machine1 h1{
+        color:snow;
+        text-decoration: none;
+        display: block;
+        font-size: 25px;
+        position:relative;
+        text-transform: capitalize;
+        top:-2.8in;
+        left: -8px;
+        min-width:fit-content;
+    }
+    .machine kbd{
+        width:100%;
+        padding: 0%;
+        margin: 0%;
+        font-size: 30px;
+        line-height: 50px;
+        text-align: left;
+        position:absolute;
+        letter-spacing: 3px;
+        left: 15px;
+        margin-bottom:10%;
+    }
+    .machine1 img{
+        margin-top: 1.4in;
+        max-width: 320px;
+        height: 210px;
+        position: relative;
+        margin-bottom: -80px;
+        border-radius: 10%;
+        filter: blur(1px);
+        border: 2px solid silver;
+        border-radius: 10%;
+    }
+}

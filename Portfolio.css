@@ -1,0 +1,523 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: content-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #000100;
+    color: aliceblue;
+}
+.logo1{
+    width: 120px;
+    height: 70px;
+}
+ul{
+    display:flex;
+    overflow: hidden;
+    list-style-type:none;
+}
+a{
+    position: relative;
+    display: block;
+    transition: .6s;
+}
+a::after{
+    position: absolute;
+    content: "  ";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0%;
+    transition: transform .6s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+a:hover{
+    color:wheat;
+}
+a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding:30px 20px;
+    display:flex;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    background-image: linear-gradient(
+        to bottom,transparent 0%,transparent 90%,skyblue 90%,skyblue 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x:right;
+    transition:  background-size 600ms;
+}
+.main{
+    color: red;
+}
+li a:hover{
+    color: red;
+    background-size: 100% 10%;
+    background-position-x:left ;
+}
+.homepage h2{
+    position:relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    color:aquamarine;
+    text-align:left;
+    max-width: 80%;
+    min-height: 100%;
+    left: 40px;
+    top: -100px;
+}
+.one pre{
+    color: antiquewhite;
+    position: relative;
+    top: -7rem;
+    left: 19rem;
+    font-size:xx-large;
+   
+}
+.homepage{
+    box-sizing: border-box;
+    display:block;
+    max-width:130%;
+    min-height: 100%;
+    filter:brightness(20px);
+    cursor: grab;
+    background-image: url("./shiva1.png");
+    background-position:center;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position-y:10px;
+    background-position-x:150vh;
+    margin-bottom: -2in;
+    content: normal;
+    padding: 0%;
+}
+.homepage h1{
+    font-size: 45px;
+    position: relative;
+    top: -5pc;
+    right: 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family:monospace;
+    float: right;
+    background-image: linear-gradient(
+        to bottom,transparent 0%,transparent 90%,hotpink 90%,hotpink 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x:right;
+    transition:  background-size 600ms;
+    animation-name: shiva;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@-webkit-keyframes shiva{
+    10%{color:white;}
+    20%{color:rgb(208, 152, 152);}
+    30%{color:rgb(77, 51, 51);}
+    50%{color:rgb(181, 166, 96);}
+    70%{color:rgb(149, 76, 76);}
+    80%{color:rgb(83, 154, 187);}
+    90%{color:rgb(219, 29, 130);}
+}
+.homepage h1:hover{
+    background-size: 100% 100%;
+    background-position-x:left ;
+}
+.homepage img{
+    display: none;
+    position:absolute;
+    top: 10%;
+    left: 65%;
+    max-width: 400px;
+    min-height: 500px;
+}
+.svg2{
+    position: relative;
+    left: 2.3in;
+    filter: blur(1px);
+    top: 0px;
+    overflow:visible;
+}
+
+.svg3{
+    position: relative;
+    left: 1.2in;
+    filter: blur(1px);
+    top: 0px;
+    overflow:visible;
+}
+.homepage i{
+    max-width: 600px;
+    text-align: justify;
+    position:absolute;
+    left: 0%;
+    top: 320px;
+    padding:6em 0em 0em 3em ;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-spacing: 2px;
+    cursor: pointer;
+}
+.svg{
+    filter: blur(2px);
+    padding: 0cap;
+    margin: 0%;
+}
+.edu{
+    margin-top: 20%;
+    font-size: 30px;
+    padding: 2% 0%;
+}
+.education{
+    display:flex;
+    flex-direction:row;
+}
+.edu_container{
+    background: linear-gradient(to right,rgb(55, 53, 53),rgb(104, 88, 88));
+}
+h1{
+    margin-left: 2%;
+    font-size:50px;
+    color:whitesmoke;
+    background: transparent;
+}
+.edu1{
+    width: 40%;
+
+}
+.margin_btech{
+    margin: 3% 0% 0% 4%;
+    width: 470px;
+    filter: blur(1.5px);
+}
+.margin_inter{
+    margin: 4% 0% 0% 8%;
+    width: 330px;
+    filter: blur(1.5px);
+}
+.margin_10{
+    margin: 4% 0% 0% 6%;
+    width: 330px;
+    filter: blur(1.5px);
+}
+.img_btech{
+    width: 50px;
+    height: 60px;
+}
+.btech{
+    margin:-13% 0% 0% 13%;
+    color:black;
+    font-size:35px;
+}
+.btech_box{
+    margin-left: 4%;
+}
+.img_inter{
+    margin-top: -4%;
+    width:80px;
+    height:90px;
+}
+.inter{
+    margin:-21% 0% 0% 23%;
+    color:black;
+    font-size:35px;
+}
+.inter_box{
+    margin-left:10%;
+}
+.img_10{
+    width: 50px;
+    height: 60px;
+}
+.ten{
+    margin:-17% 0% 0% 20%;
+    color:black;
+    font-size:35px;
+}
+.ten_box{
+    margin-left:10%;
+}
+em{
+    word-spacing: 10px;
+    line-height: 150%;
+    color: antiquewhite;
+    text-align:center;
+    font-size:medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.edu2{
+    width: 30%;
+
+}
+.edu3{
+    width: 30%;
+    margin-right: 0%;
+}
+.ex{
+    display:inline-block;
+    margin: 0%;
+    padding: 0%;
+}
+@media (max-width:1400px) and (min-width:720px){
+    .logo{
+        display: none;
+    }
+    .shiva1{
+        display: none;
+    }
+    .pic{
+        display: none;
+    }
+    .svg1{
+        display: none;
+    }
+}
+@media  (max-width:400px)
+{
+    *{
+        max-width: 100%;
+        display: block;
+        box-sizing: initial;
+        overflow:visible;
+    }
+    .svg2{
+        display: none;
+    }
+    .svg3{
+        display: none;
+    }
+    .svg{
+        display:none;
+    }
+    .pic{
+        display:block;
+    }
+    .homepage{
+        box-sizing: border-box;
+        display:block;
+        max-width:100%;
+        min-height:50vh;
+        filter:brightness(20px);
+        cursor: grab;
+        background-image: url("./shiva1.png");
+        background-position:center;
+        background-size:contain;
+        background-clip:content-box;
+        background-repeat: no-repeat;
+        background-position-y:0.5in;
+        background-position-x:1in;
+        margin-bottom: 30%;
+        content: normal;
+    }
+    .homepage h1{
+        font-size: 25px;
+        font-weight: 300;
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        text-transform: capitalize;
+        font-family:cursive;
+        animation-name: shiva;
+        animation-duration: 6s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
+    @-webkit-keyframes shiva{
+        10%{color:white;}
+        20%{color:rgb(208, 152, 152);}
+        30%{color:rgb(77, 51, 51);}
+        50%{color:rgb(181, 166, 96);}
+        70%{color:rgb(149, 76, 76);}
+        80%{color:rgb(83, 154, 187);}
+        90%{color:rgb(219, 29, 130);}
+    }
+    .homepage h1:hover{
+        background-size: 100% 100%;
+        background-position-x:left ;
+    }
+    .one{
+        position: relative;
+        width: 100%;
+    }
+    .homepage img{
+        max-width: 35px;
+        min-height: 35px;
+        display: block;
+        position: relative;
+        left: 3.2in;
+        top: -7px;
+        padding: 0%;
+        border: 2px solid firebrick;
+        object-fit:fill;
+        border-radius: 30%;
+    }
+    svg{
+        width: 30px;
+        position: relative;
+        top: 40px;
+    }
+    .homepage h2{
+        background: transparent;
+        text-overflow:ellipsis;
+        white-space:initial;
+        position:relative;
+        min-width: 100%;
+        top: -14px;
+        text-align: left;
+        font-size: 40px;
+    }
+    .homepage pre{
+       display: inline;
+       color:firebrick;
+       font-size: 18px;
+       max-width: 110%;
+       position:relative;
+       font-weight: bold;
+       left: 7pc;
+       top: -10px;
+    }
+    .homepage i{
+       top: 14pc;
+       left: -1pc;
+       max-width: 80%;
+       font-size: 16px;
+    }
+    .logo1{
+        display: none;
+    }
+    .shiva{
+        display: none;
+    }
+    /**nav ul .cls{
+        padding: 10px;
+        top: -1%;
+        width: 60px;
+        height: 40px;
+        display: block;
+        position:absolute;
+    }**/
+    nav ul{
+        display:none;
+    }
+    @media (max-width:400px) and (min-width:200px){
+        .edu{
+            margin-top: -55%;
+            padding: 20px;
+        }
+        .edu_container{
+            margin-top: -90px;
+        }
+        .edu h1{
+            padding-bottom: 1px;
+            font-size: 45px;
+            text-align: left;
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-decoration-color: #6cf8ff;
+        }
+        .education{
+            display: flex;
+            flex-direction:column;
+            height: 660px;
+        }
+        .edu1{
+            width: 100%;
+            position: relative;
+            padding:0%;
+        }
+        .edu1 h3{
+            position: relative;
+            top: -7px;
+            left: 0px;
+            text-align: left;
+        }
+        .edu1 em{
+            padding-top: 10px;
+            text-align: left;
+        }
+        .edu1 .img_btech{
+            position: relative;
+            left: -25px;
+            top: 15px;
+        }
+        .edu1 .margin_btech{
+            position: relative;
+            width: 310px;
+            left: -10px;
+            filter: blur(1.5px);
+        }
+        .edu2{
+            width: 100%;
+            display:grid;
+        }
+        .edu2 h3{
+            text-align: left;
+            position: relative;
+            top: -7px;
+            left: -22px;
+            bottom: -65%;
+        }
+        .edu2 .img_inter{
+            position: relative;
+            top: 0px;
+            left: -34px;
+        }
+        .edu2 .margin_inter{
+            position: relative;
+            width: 310px;
+            left: -20px;
+            top: -38px;
+            filter: blur(1.5px);
+        }
+        .edu2 em{
+            text-align: left;
+            position: absolute;
+            line-height: 250%;
+            margin-top: -7%;
+            left: 8%;
+            padding-bottom: 0%;
+        }
+        .edu3{
+            width: 100%;
+            position: relative;
+            top: 100px;
+        }
+        .edu3 h3{
+            text-align:left;
+            position: relative;
+            top: -20px;
+        }
+        .edu3 .margin_10{
+            position: relative;
+            top: -12%;
+            left: -15px;
+            max-width: 310px;
+            filter: blur(1.5px);
+        }
+        .edu3 .img_10{
+            position: relative;
+            top: -5%;
+            left: -7%;
+        }
+        .edu3 em{
+            position: relative;
+            left: -9%;
+            top: -10px;
+            text-align: left;
+        }
+    }
+}
